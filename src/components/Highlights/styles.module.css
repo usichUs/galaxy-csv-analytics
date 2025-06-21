@@ -1,0 +1,36 @@
+.title_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.title_wrap p {
+  color: #cb81ff;
+  font-size: 30px;
+  text-align: center;
+}
+
+.highlights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.highlight {
+  width: 49%;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px 0;
+}
+
+.highlight_value {
+  font-size: 40px;
+}
+
+.highlight_desc {
+  font-size: 20px;
+}

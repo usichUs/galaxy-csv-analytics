@@ -1,0 +1,6 @@
+.base {
+  margin: 40px 40px 0px 40px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

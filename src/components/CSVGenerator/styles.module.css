@@ -1,0 +1,45 @@
+.generator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.generator_status {
+  display: flex;
+  align-items: center;
+  padding: 15px 27px;
+  background: #cb81ff;
+  border-radius: 8px;
+  font-weight: 500;
+  border: none;
+  font-size: 25px;
+  max-height: 59px;
+  box-sizing: border-box;
+  gap: 10px;
+}
+
+.generator_status_success {
+  background: #d4fae6;
+}
+
+.generator_status_error {
+  background: #ff5f00;
+  color: #fff;
+}
+
+.generator_status_loading {
+  min-width: 160px;
+}
+
+.generator_status_wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.status_message_error {
+  color: #ff5f00;
+}

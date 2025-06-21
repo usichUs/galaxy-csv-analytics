@@ -1,0 +1,56 @@
+.uploader_input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eacdff;
+  width: 100%;
+  border-radius: 20px;
+  padding: 40px 0;
+  border: 1px solid transparent;
+}
+
+.uploader_input .error_text {
+  color: #ff5f00;
+}
+
+.downloaded {
+  background-color: transparent;
+  border: 1px solid #201b10;
+}
+
+.error {
+  background-color: transparent;
+  border: 1px solid #ff5f00;
+}
+
+.dragover {
+  background: #d4fae6;
+}
+
+.uploader_input_wrap {
+  display: flex;
+  gap: 5px;
+}
+
+.cancel {
+  color: white;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 59px;
+  height: 59px;
+  border-radius: 8px;
+}
+
+.input_file {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  white-space: nowrap;
+}

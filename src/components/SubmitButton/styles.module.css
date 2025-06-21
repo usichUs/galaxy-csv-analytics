@@ -1,0 +1,15 @@
+.submit_button {
+  color: #787878;
+  background-color: #c0c0c0;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 27px;
+  cursor: pointer;
+  min-height: 59px;
+}
+
+.active {
+  background-color: #2ae881;
+  color: #201b10;
+}

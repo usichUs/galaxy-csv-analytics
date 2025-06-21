@@ -1,0 +1,10 @@
+.cancel {
+  color: white;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 59px;
+  height: 59px;
+  border-radius: 8px;
+}
