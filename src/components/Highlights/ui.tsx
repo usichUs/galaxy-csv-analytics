@@ -1,14 +1,11 @@
 import { useUploaderStore } from "../../stores/useUploaderStore";
-import { formatNumber } from "../../utils/formatNumber";
-import { getDateByIndex } from "../../utils/getDate";
+import { formatHighlightValue } from "../../utils/formatHighlightValue";
 import { HIGHLIGHTS_CONFIG } from "./config";
 import styles from "./styles.module.css";
 
 export function Highlights() {
   const highlightsArr = useUploaderStore((s) => s.highlights);
-  const highlights = highlightsArr.length
-    ? highlightsArr[highlightsArr.length - 1]
-    : null;
+  const highlights = highlightsArr[highlightsArr.length - 1];
 
   if (!highlights) {
     return (
@@ -25,11 +22,7 @@ export function Highlights() {
       {HIGHLIGHTS_CONFIG.map(({ key, desc }) => (
         <div className={styles.highlight} key={key}>
           <p className={styles.highlight_value}>
-            {highlights[key] !== undefined
-              ? key === "big_spent_at" || key === "less_spent_at"
-                ? getDateByIndex(Number(highlights[key]))
-                : formatNumber(highlights[key])
-              : "-"}
+            {formatHighlightValue(key, highlights[key])}
           </p>
           <p className={styles.highlight_desc}>{desc}</p>
         </div>

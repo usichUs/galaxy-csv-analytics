@@ -46,6 +46,10 @@ export function Uploader() {
       setError("Пожалуйста, выберите файл для загрузки.");
       return;
     }
+    if (!file.name.endsWith("csv")) {
+      setError("Недопустимый формат файла");
+      return;
+    }
     setIsLoading(true);
     setError("");
     setIsSuccess(false);
