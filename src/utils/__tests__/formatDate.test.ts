@@ -9,7 +9,7 @@ describe("formatDate Utility", () => {
 
   it("handles invalid ISO date string gracefully", () => {
     const result = formatDate("invalid-date");
-    expect(result).toBe("NaN.NaN.NaN"); // Проверяем, как функция обрабатывает некорректные данные
+    expect(result).toBe("NaN.NaN.NaN");
   });
 
   it("formats date with single-digit day and month correctly", () => {

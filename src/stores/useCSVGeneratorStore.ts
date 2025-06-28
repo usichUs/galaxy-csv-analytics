@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-type CSVGeneratorStore = {
+export type CSVGeneratorStore = {
   isLoading: boolean;
   error: string | null;
   isSuccess: boolean;

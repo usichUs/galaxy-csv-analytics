@@ -29,7 +29,15 @@ export function Uploader() {
 
   const { addToHistory } = useHistoryStore.getState();
 
-  const handleFileChange = (file: File) => {
+  const handleFileChange = (file: File | null) => {
+    if (!file) {
+      setError("Пожалуйста, выберите файл для загрузки.");
+      return;
+    }
+    if (!file.name.endsWith(".csv")) {
+      setError("Недопустимый формат файла");
+      return;
+    }
     setFile(file);
     setError("");
     setIsSuccess(false);
@@ -101,7 +109,7 @@ export function Uploader() {
     <form className={styles.uploader} onSubmit={handleSubmit}>
       <p className={styles.uploader_desc}>
         Загрузите <span>csv</span> файл и получите
-        <span>полную информацию</span> о нём за сверхнизкое время
+        <span> полную информацию</span> о нём за сверхнизкое время
       </p>
       <DropZone
         file={file}

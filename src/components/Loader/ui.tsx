@@ -17,6 +17,7 @@ export function Loader({ progress = 0 }: LoaderProps) {
       height={radius * 2}
       width={radius * 2}
       style={{ transform: "rotate(-90deg)" }}
+      role="img"
     >
       <circle
         stroke="#eee"

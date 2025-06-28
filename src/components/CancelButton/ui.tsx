@@ -3,7 +3,11 @@ import styles from "./styles.module.css";
 
 export function CancelButton({ handleReset }: { handleReset: () => void }) {
   return (
-    <button className={styles.cancel} onClick={handleReset}>
+    <button
+      className={styles.cancel}
+      onClick={handleReset}
+      data-testid="cancel-button"
+    >
       <Icon width="32" icon="proicons:cancel" />
     </button>
   );
