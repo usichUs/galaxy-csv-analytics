@@ -44,6 +44,7 @@ export function HistoryList() {
             </div>
           </div>
           <div
+            data-testid="delete-icon"
             className={styles.history_delete}
             onClick={(e) => {
               e.stopPropagation();

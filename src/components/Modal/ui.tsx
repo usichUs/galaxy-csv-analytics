@@ -13,7 +13,7 @@ export function Modal({ isOpen, onClose, children }: ModalProps) {
 
   return createPortal(
     <div className={styles.overlay} onClick={onClose}>
-      <div className={styles.modal_outer}>
+      <div className={styles.modal_outer} role="dialog">
         <CancelButton handleReset={onClose} />
         <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
           {children}
